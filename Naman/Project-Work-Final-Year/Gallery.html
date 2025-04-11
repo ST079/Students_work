@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Himchuli Academy</title>
+        <link rel="icon" type="image/jpg" href="Himchuli.jpg">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header class="header">        
+            <img src="Himchuli.jpg" alt="" width="30px"/>
+            <div class="group">
+                <ul class="navigation">
+                    <li><a href="Project Work.html">HOME</a></li>
+                    <li><a href="Aboutus.html">ABOUT US</a></li>
+                    <li><a href="Notice.html">NOTICE</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+                <div class="search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                        <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                    </span>
+                </div>
+                <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+            </div>
+            <div class="searchBox">
+                <input type="text" id="searchInput" placeholder="Search Here ..."> <!-- Added id="searchInput" -->
+            </div>
+        </header>
+        <div class="txt">
+            Collection of Photos of Himchuli Academy:
+        </div>
+        <section class="container"> 
+            <div class="gallery">
+                <div class="image">
+                    <img src="G1.jpg"  id="slide-1">
+                    <img src="G2.jpg"  id="slide-2">
+                    <img src="G3.jpg"  id="slide-3">
+                    <img src="G4.jpg"  id="slide-4">
+                    <img src="G5.jpg"  id="slide-5">
+                    <img src="G6.jpg"  id="slide-6">
+                    <img src="G7.jpg"  id="slide-7">
+                    <img src="G8.jpg"  id="slide-8">
+                    <img src="G9.jpg"  id="slide-9">
+                    <img src="G10.jpg" id="slide-10">
+                    <img src="G11.jpg" id="slide-11">
+                    <img src="G12.jpg" id="slide-12">
+                </div>
+                <div class="slidernav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
+                    <a href="#slide-9"></a>
+                    <a href="#slide-10"></a>
+                    <a href="#slide-11"></a>
+                    <a href="#slide-12"></a>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            let searchBtn = document.querySelector('.searchBtn');
+            let closeBtn = document.querySelector('.closeBtn');
+            let searchBox = document.querySelector('.searchBox');
+            let searchInput = document.getElementById('searchInput');
+            let navigation = document.querySelector('.navigation');
+            let menuToggle = document.querySelector('.menuToggle');
+            let header = document.querySelector('.header');
+            let menuItems = document.querySelectorAll('.navigation li');
+
+            // Open search box when clicking search button
+            searchBtn.onclick = function() {
+                searchBox.classList.add('active');
+                closeBtn.classList.add('active');
+                searchBtn.classList.add('active');
+                menuToggle.classList.add('hide');
+                header.classList.remove('open');
+            };
+
+            // Close search box when clicking close button
+            closeBtn.onclick = function() {
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+                searchInput.value = ""; // Clear search field
+                resetMenu(); // Reset menu to show all items
+            };
+
+            // Toggle menu when clicking menu button
+            menuToggle.onclick = function() {
+                navigation.classList.toggle('open');
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+            };
+
+            // Search function to filter navigation links
+            function searchMenu() {
+                let filter = searchInput.value.toUpperCase();
+                
+                menuItems.forEach(item => {
+                    let link = item.querySelector('a');
+                    let textValue = link.textContent || link.innerText;
+                    
+                    if (textValue.toUpperCase().indexOf(filter) > -1) {
+                        item.classList.remove("hide"); // Show matching items
+                    } else {
+                        item.classList.add("hide"); // Hide non-matching items
+                    }
+                });
+            }
+
+            // Reset menu to show all items when search is cleared
+            function resetMenu() {
+                menuItems.forEach(item => {
+                    item.classList.remove("hide");
+                });
+            }
+        </script>
+    </body>
+</html>

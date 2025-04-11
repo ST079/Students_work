@@ -1,0 +1,210 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+	background: white;
+	position: sticky;
+	top: 0;
+}
+	
+
+.nav-items {
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black
+}
+
+.header .nav .logo {
+	margin-left: 45px;
+	border-radius: 30px;
+}
+
+.header .nav .logo-element {
+	display: flex;
+}
+
+.header .nav .logo-element .logo-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 10px;
+
+	>p {
+		font-size: 10px;
+	}
+}
+
+.navigation {
+	display: flex;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+p{
+    color: #000;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .head{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 15px 0 10px 0;
+}
+
+.container .head-content{
+    background-color: rgb(200, 233, 116);
+    display: flex;
+    align-items: center;
+    color:rgb(14, 23, 6);
+}
+
+.head-content-head{
+    height:200%;
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 670px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.child1{
+    color:inherit;
+}
+.child2{
+    color: #241212;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.photo-gallery{
+ width: 90%;
+ margin:auto;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-gap: 20px;
+}
+.pic{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 grey;
+    cursor: pointer;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+}
+
+.pic:hover{
+    box-shadow: 0 16px 16px 0 grey;
+    border: 1px solid gray;
+}
+
+@media screen and (max-width:480px) {
+    .photo-gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* footer */
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

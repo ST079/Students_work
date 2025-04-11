@@ -1,0 +1,396 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background: white;
+	position: sticky;
+	top: 0;
+}
+
+
+.nav-items {
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black
+}
+
+.header .nav .logo {
+	margin-left: 45px;
+	border-radius: 30px;
+}
+
+.header .nav .logo-element {
+	display: flex;
+}
+
+.header .nav .logo-element .logo-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 10px;
+
+	>p {
+		font-size: 10px;
+	}
+}
+
+.navigation {
+	display: flex;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+
+.main {
+	background-image: url(main.png);
+	height: 150vh;
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main .text {
+	text-align: center;
+	color: rgba(215, 252, 243, 0.83);
+	font-size: 50px;
+	font-family: cursive;
+
+}
+
+.intro {
+	margin-right: 30px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	background-color: rgb(210, 215, 220);
+}
+
+.w-text {
+	font-size: 20px;
+	margin-left: 40px;
+	margin-top: 60px;
+	font-family: cursive;
+	color: brown;
+
+}
+
+.ha {
+	color: #000;
+	font-size: 40px;
+	font-weight: 700;
+	font-family: cursive;
+}
+
+.y-text {
+	font-size: 40px;
+}
+.o2{
+color: rgb(172, 10, 10);}
+.o1{
+	margin-left:  60px;
+	text-align: left;
+	
+}
+.o3{
+font-size: 20px;
+color: rgb(75, 43, 16);
+font-family: cursive;
+}
+.o4{
+	float: right;
+	margin-right: 150px;
+}
+.o5{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-left: 70px;
+	margin-right: 150px;
+	line-height: 1.5;
+	background-color: rgb(154, 27, 46);
+}
+.col2{
+	height: 100%;
+	>img{
+		height: inherit;
+	}
+}
+.o6{
+	display: flex;
+	font-size: 30px;
+	color: aliceblue;
+	margin-top: 30px;
+	padding: 30px
+}
+.what {
+	margin-top: 28px;
+	font-size: 20px;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: 100;
+}
+
+.tere {
+	background: url("10.jpg");
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iu {
+	font-size: 50px;
+	font-weight: 900;
+	font-family: cursive;
+	color: rgb(0, 0, 0);
+
+
+}
+
+.a {
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+.ab {
+	color: #000;
+	font-weight: 900;
+	font-size: 40px;
+}
+
+.abc {
+	font-size: 20px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: 50;
+	text-align: justify;
+	color: grey;
+}
+
+.pop {
+	margin-left: 100px;
+	border-radius: 40px;
+	overflow: hidden;
+
+}
+
+.popp {
+	font-size: 25px;
+	margin-left: 100px;
+	text-align: justify;
+
+}
+
+.hop {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.pops {
+	margin-left: 25px;
+	margin-right: 40px;
+}
+
+.bd {
+	margin: 0;
+	padding: 20px;
+	background-color: rgb(245, 241, 237);
+}
+
+.head {
+	text-align: center;
+}
+
+.notices-container {
+	max-width: 1250px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+	margin-bottom: 30px;
+}
+
+.category .h2 {
+	color: #007bff;
+	font-size: 30px;
+	border-bottom: 2px solid;
+	margin-bottom: 20px;
+}
+.notice{
+	font-size: 20px;
+	margin-bottom: 15px;
+      padding: 10px;
+      border-left: 4px solid #007bff;
+      background: #f1f1f1;
+      border-radius: 4px;
+}
+.notice h3 {
+	margin: 0;
+	color: #007bff;
+}
+.notice p{
+	margin: 5px 0;
+	color: #555
+
+
+}
+
+/* footer */
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f9;
+	color: #333;
+}
+
+.container {
+	width: 80%;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+h2 {
+	color: #4CAF50;
+	font-size: 2em;
+	margin-bottom: 20px;
+	text-align: center;
+}
+p {
+	line-height: 1.8;
+	font-size: 1.1em;
+	text-align: justify;
+}
+.why-choose-us {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.why-choose-us .card {
+	flex: 1 1 calc(33.333% - 20px);
+	background-color: #e8f5e9;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.why-choose-us .card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.why-choose-us .card h3 {
+	color: #4CAF50;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+.why-choose-us .card p {
+	font-size: 1em;
+	text-align: center;
+}

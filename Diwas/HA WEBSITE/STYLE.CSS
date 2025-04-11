@@ -1,0 +1,291 @@
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 10px;
+    padding: 30px;
+
+    >a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background: rgb(103, 230, 109);
+    display: flex;
+    border-radius: 50px;
+}
+
+.description {
+    margin-top: 25px;
+    margin-left: 100px;
+
+}
+
+.img {
+    margin-top: 10px;
+    margin-left: 250px;
+>a{
+
+
+    >img {
+        border-radius: 20px !important;
+    }
+}
+}
+
+.nav-item {
+    >a:hover {
+        color: black;
+
+    }
+
+}
+
+.background {
+    margin: 10px;
+    background: BLUE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("baccha.png");
+    border-radius: 2000px;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+
+    >h1 {
+        font-size: 100px;
+        color: BLACK;
+        background: rgb(201, 201, 87);
+        border-radius: 20px;
+    }
+}
+
+.body {
+    background: rgb(201, 201, 145);
+    border-radius: 3oopx;
+}
+
+.about {
+    display: flex;
+    margin: 20PX;
+}
+
+.about-img {
+    margin-top: 30px;
+
+    >img {
+        border-radius: 30px;
+    }
+}
+
+.sec {
+    margin-top: 10px;
+}
+
+
+
+
+.bg {
+    background: rgb(201, 201, 145);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px !important;
+
+}
+
+.contact-info {
+    background: rgb(226, 143, 143);
+    border-radius: 30px;
+
+}
+
+.item {
+    padding: 20px 190px 20px 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 30px;
+
+}
+
+.diwas {
+    padding: 20px 40px 20px 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 30px;
+    margin-bottom: 20PX;
+
+}
+
+.item:hover {
+    box-shadow: 10px 10px;
+}
+
+.diwas:hover {
+    box-shadow: 10px 10px;
+}
+
+.t-des {
+    font-size: 25px;
+}
+
+.list-item {
+    font-size: 20px;
+}
+
+.CON {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 30PX;
+}
+
+.NO {
+    background-color: rgb(113, 113, 179);
+    margin: 30PX;
+    border-radius: 30PX;
+
+    >P {
+        padding: 40PX;
+        text-align: center;
+    }
+
+}
+
+.NO:hover {
+    box-shadow: 10px 10px rgb(24, 2, 2);
+}
+
+.GALLERY {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20PX;
+}
+
+.PHOTO {
+    margin-bottom: 20PX;
+
+    >IMG {
+        border-radius: 20PX;
+    }
+}
+
+.PHOTO {
+    >IMG:HOVER {
+        box-shadow: 10px 10px rgb(49, 9, 9);
+    }
+}
+
+.s {
+
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+    >p {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: yellow;
+        padding: 100px;
+        border-radius: 20px;
+    }
+
+}
+
+.u {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    >a {
+        >button {
+            padding: 20px 30px 20px 20px;
+           
+            color: black;
+        }
+    }
+}
+.u{
+    >a{
+        >button:hover{
+            box-shadow: 10px 10px rgb(24, 2, 2); 
+           background-color: blue; 
+           color: white;
+        }
+    }
+}
+.l{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+    >img{
+        height: 400px;
+        width: 400px;
+        border-radius: 20px !important;
+       
+    }
+
+}
+.F{
+ margin-left: 30px;
+    
+    padding-top: 20PX;
+}
+.footer{
+    background: rgb(55, 185, 61);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+   
+}
+.footer-links{
+    >img{
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+}
+.RED{
+    color: RED;
+  
+}
+.t-des{
+    color: blue;
+}
+.list-item{
+    >li{
+        color: blue;
+        font-size:25px; 
+        margin-left: 10px; 
+    }
+}

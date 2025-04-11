@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Himchuli Academy</title>
+    <link rel="icon" type="image/jpg" href="Himchuli.jpg" />
+    <link rel="stylesheet" type="text/css" href="Home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="Himchuli.jpg" alt="" width="30px" />
+      <div class="group">
+        <ul class="navigation">
+          <li><a href="Project Work.html">HOME</a></li>
+          <li><a href="Aboutus.html">ABOUT US</a></li>
+          <li><a href="Notice.html">NOTICE</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+        <div class="search">
+          <span class="icon">
+            <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+            <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+          </span>
+        </div>
+        <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+      </div>
+      <div class="searchBox">
+        <input type="text" id="searchInput" placeholder="Search Here ..." />
+      </div>
+    </header>
+    <div class="out">
+      <main class="container">
+        <div class="content">
+          <div class="head">
+            <img src="image1.png" alt="" />
+            <h6>"Quality Life through Quality Education"</h6>
+          </div>
+          <div class="content-body">
+            <div class="box">
+              <img src="School.jpg" alt="" />
+            </div>
+            <div class="circle"></div>
+          </div>
+          <div class="ft">
+            <div class="f">
+              <span
+                ><ion-icon name="location-outline"></ion-icon>Madhyapur Thimi-7,
+                Bhaktapur, Nepal
+              </span>
+              <span><ion-icon name="call-outline"></ion-icon> 01-6638441 </span>
+              <span
+                ><ion-icon name="mail-outline"></ion-icon>
+                himchuli.academy@gmail.com
+              </span>
+            </div>
+            <div class="ff">
+              <img class="ulli" src="image.png" alt="" />
+            </div>
+          </div>
+          <div class="liner"></div>
+        </div>
+      </main>
+    </div>
+    <div class="footer">
+      <footer class="foot">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Himchuli Academy</h2>
+            <p>Providing quality education for a better future.</p>
+            <div class="contact">
+              <span
+                ><ion-icon name="call-outline"></ion-icon> &nbsp;
+                01-6638441</span
+              >
+              <span
+                ><ion-icon name="mail-outline"></ion-icon> &nbsp;
+                himchuli.academy@gmail.com</span
+              >
+            </div>
+            <div class="socials">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="Project Work.html">Home</a></li>
+              <li><a href="Aboutus.html">About Us</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="line" />
+        <p class="footer-bottom">
+          &copy; 2025 Himchuli Academy. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let searchBtn = document.querySelector(".searchBtn");
+      let closeBtn = document.querySelector(".closeBtn");
+      let searchBox = document.querySelector(".searchBox");
+      let searchInput = document.getElementById("searchInput");
+      let navigation = document.querySelector(".navigation");
+      let menuToggle = document.querySelector(".menuToggle");
+      let header = document.querySelector(".header");
+      let menuItems = document.querySelectorAll(".navigation li");
+
+      // Open search box when clicking search button
+      searchBtn.onclick = function () {
+        searchBox.classList.add("active");
+        closeBtn.classList.add("active");
+        searchBtn.classList.add("active");
+        menuToggle.classList.add("hide");
+        header.classList.remove("open");
+      };
+
+      // Close search box when clicking close button
+      closeBtn.onclick = function () {
+        searchBox.classList.remove("active");
+        closeBtn.classList.remove("active");
+        searchBtn.classList.remove("active");
+        menuToggle.classList.remove("hide");
+        searchInput.value = ""; // Clear search field
+        resetMenu(); // Reset menu to show all items
+      };
+
+      // Toggle menu when clicking menu button
+      menuToggle.onclick = function () {
+        navigation.classList.toggle("open");
+        searchBox.classList.remove("active");
+        closeBtn.classList.remove("active");
+        searchBtn.classList.remove("active");
+      };
+
+      // Search function to filter navigation links
+      function searchMenu() {
+        let filter = searchInput.value.toUpperCase();
+
+        menuItems.forEach((item) => {
+          let link = item.querySelector("a");
+          let textValue = link.textContent || link.innerText;
+
+          if (textValue.toUpperCase().indexOf(filter) > -1) {
+            item.classList.remove("hide"); // Show matching items
+          } else {
+            item.classList.add("hide"); // Hide non-matching items
+          }
+        });
+      }
+
+      // Reset menu to show all items when search is cleared
+      function resetMenu() {
+        menuItems.forEach((item) => {
+          item.classList.remove("hide");
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himchuli Academy</title>
+    <link rel="icon" type="image/jpg" href="Himchuli.jpg" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
+  </head>
+  <body>
+    <header>
+      <img src="Himchuli.jpg" alt="" width="30px" />
+      <div class="group">
+        <ul class="navigation">
+          <li><a href="Project Work.html">HOME</a></li>
+          <li><a href="Aboutus.html">ABOUT US</a></li>
+          <li><a href="Notice.html">NOTICE</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+        <div class="search">
+          <span class="icon">
+            <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+            <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+          </span>
+        </div>
+        <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+      </div>
+      <div class="searchBox">
+        <input type="text" placeholder="Search Here ..." />
+      </div>
+    </header>
+    <div class="box">
+      <div class="baksha">
+        <h3>ABOUT OUR SCHOOL</h3>
+        <b>
+          <hr class="hr" width="100px" color="darkblue" />
+        </b>
+        <div class="bober">
+          <p>
+            It's a school which focuses on the holistic development of a child
+            and activity based learning.
+          </p>
+        </div>
+        <br />
+        <p class="para">
+          We aim to offer a high quality education in any inspiring and
+          supporitve environment <br />
+          with friendly and expert teaching staff, education you little ones in
+          innovative learning.
+        </p>
+        <img class="ig" src="Himi1.jpg" alt="" width="200px" />
+        <img class="ig" src="Himi2.jpg" alt="" width="200px" />
+        <img class="ig" src="Himi3.jpg" alt="" width="200px" />
+        <div>
+          <h3>WE COMMIT TO BUILD</h3>
+          <b>
+            <hr class="hr" width="100px" color="darkblue" />
+          </b>
+          <li>Strong bond between parents, teacher, school and students</li>
+          <li>
+            Character of your child so that it helps them develop good habits
+            and attitude
+          </li>
+          <li class="li">
+            Passion for learning, creativity and curitosity, a desire to know or
+            learn something more.
+          </li>
+        </div>
+        <img class="ig" src="Him1.jpg" alt="" width="200px" />
+        <img class="ig" src="gk.jpg" alt="" width="200px" />
+        <img class="ig" src="Himi6.jpg" alt="" width="200px" />
+        <h3>OUR FEATUERS</h3>
+        <hr class="hr" width="100px" color="darkblue" />
+        <li>Earthquake resistant building</li>
+        <li>School Bus and Van</li>
+        <li>Top performance and exposure</li>
+        <li>ICMAS, MIDAS, eClass and eLibrary</li>
+        <li>Sports training by reputes national coaches</li>
+        <li>
+          Well-equipped Science lab, Computer lab, Montessori lab and Library
+          room
+        </li>
+        <li>Safe and homely environment</li>
+        <li>Hygenic meals</li>
+        <li>Extended hours for working parents</li>
+        <li>Stage exposure activities</li>
+        <li>Extra-curricular activities</li>
+        <li>Ai and robotics based computer class</li>
+        <li>Dedicated lab, class and park for Mathematics</li>
+      </div>
+    </div>
+    <div class="footer">
+      <footer class="foot">
+          <div class="footer-content">
+              <div class="footer-section about">
+                  <h2>Himchuli Academy</h2>
+                  <p>Providing quality education for a better future.</p>
+                  <div class="contact">
+                      <span><ion-icon name="call-outline"></ion-icon> &nbsp; 01-6638441</span>
+                      <span><ion-icon name="mail-outline"></ion-icon> &nbsp; himchuli.academy@gmail.com</span>
+                  </div>
+                  <div class="socials">
+                      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                      <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                      <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  </div>
+              </div>
+              <div class="footer-section links">
+                  <h2>Quick Links</h2>
+                  <ul>
+                      <li><a href="Project Work.html">Home</a></li>
+                      <li><a href="Aboutus.html">About Us</a></li>
+                      <li><a href="Contact.html">Contact</a></li>
+                      <li><a href="Gallery.html">Gallery</a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr class="line">
+          <p class="footer-bottom">&copy; 2025 Himchuli Academy. All Rights Reserved.</p>
+      </footer>
+  </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let searchBtn = document.querySelector(".searchBtn");
+      let closeBtn = document.querySelector(".closeBtn");
+      let searchBox = document.querySelector(".searchBox");
+      let searchInput = document.getElementById("searchInput");
+      let navigation = document.querySelector(".navigation");
+      let menuToggle = document.querySelector(".menuToggle");
+      let header = document.querySelector(".header");
+      let menuItems = document.querySelectorAll(".navigation li");
+
+      // Open search box when clicking search button
+      searchBtn.onclick = function () {
+        searchBox.classList.add("active");
+        closeBtn.classList.add("active");
+        searchBtn.classList.add("active");
+        menuToggle.classList.add("hide");
+        header.classList.remove("open");
+      };
+
+      // Close search box when clicking close button
+      closeBtn.onclick = function () {
+        searchBox.classList.remove("active");
+        closeBtn.classList.remove("active");
+        searchBtn.classList.remove("active");
+        menuToggle.classList.remove("hide");
+        searchInput.value = ""; // Clear search field
+        resetMenu(); // Reset menu to show all items
+      };
+
+      // Toggle menu when clicking menu button
+      menuToggle.onclick = function () {
+        navigation.classList.toggle("open");
+        searchBox.classList.remove("active");
+        closeBtn.classList.remove("active");
+        searchBtn.classList.remove("active");
+      };
+
+      // Search function to filter navigation links
+      function searchMenu() {
+        let filter = searchInput.value.toUpperCase();
+
+        menuItems.forEach((item) => {
+          let link = item.querySelector("a");
+          let textValue = link.textContent || link.innerText;
+
+          if (textValue.toUpperCase().indexOf(filter) > -1) {
+            item.classList.remove("hide"); // Show matching items
+          } else {
+            item.classList.add("hide"); // Hide non-matching items
+          }
+        });
+      }
+
+      // Reset menu to show all items when search is cleared
+      function resetMenu() {
+        menuItems.forEach((item) => {
+          item.classList.remove("hide");
+        });
+      }
+    </script>
+  </body>
+</html>
